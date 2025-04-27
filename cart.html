@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Shop - Корзина</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="главная.html">Home Shop</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="главная.html">Home Shop</a></li>  <!-- Link to your home page -->
+                    <li><a href="каталог.html">Каталог</a></li> <!-- Link to your catalog page -->
+                    <li><a href="cart.html">Корзина</a></li>   <!-- Link to your cart page -->
+                </ul>
+            </nav>
+        </div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </header>
+
+    <main>
+        <section class="cart">
+            <div id="cart-items">
+                <!-- Cart items will be added here by JavaScript -->
+            </div>
+
+            <div id="total-price">
+                Итого: 0 руб.
+            </div>
+
+            <div class="buttons">
+                <button onclick="clearCart()" class="red-button">Очистить корзину</button>
+                <button onclick="showCheckoutForm()" class="red-button">Оформить заказ</button>
+            </div>
+
+            <div id="checkout-form" style="display: none;">
+                <h3>Оформление заказа</h3>
+                <form id="order-form">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Телефон:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="address">Адрес:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>     
+    </form>
+                     <label for="" rows="4" cols="50" required></textarea><br><br>
+
+                    <button type="submit" class="red-button">Отправить заказ</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Home Shop. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

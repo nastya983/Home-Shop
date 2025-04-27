@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="главная.html">Home Shop</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+        </nav>
+        <button class="cart-button" onclick="showCart()">Корзина</button>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+
+<!-- Catalog Section -->
+<section id="catalog-section" class="products">
+    <h2>Товары</h2>
+    <div class="product-grid" id="product-grid">
+        <div class="product">
+            <img src="чайник7.jpg" alt="Чайник Xiaomi">
+            <div class="product-name">Чайник Xiaomi</div>
+            <div class="product-price">₽ 3000</div>
+            <button class="add-to-cart-button" data-name="Чайник Xiaomi" data-price="3000">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="чайник8.jpg" alt="Чайник Philips">
+            <div class="product-name">Чайник Philips</div>
+            <div class="product-price">₽ 3200</div>
+            <button class="add-to-cart-button" data-name="Чайник Philips" data-price="3200">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="чайник бош.jpg" alt="Чайник Bosch">
+            <div class="product-name">Чайник Bosch</div>
+            <div class="product-price">₽ 7000</div>
+            <button class="add-to-cart-button" data-name="Чайник Bosch" data-price="7000">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="чайник бош2.jpg" alt="Чайник Bosch">
+            <div class="product-name">Чайник Bosch</div>
+            <div class="product-price">₽ 12000</div>
+            <button class="add-to-cart-button" data-name="Чайник Bosch" data-price="12000">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="тостер5.jpg" alt="Тостер Philips">
+            <div class="product-name">Тостер Philips</div>
+            <div class="product-price">₽ 3800</div>
+            <button class="add-to-cart-button" data-name="Тостер Philips" data-price="3800">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="тостер2.jpg" alt="Тостер Tefal">
+            <div class="product-name">Тостер Tefal</div>
+            <div class="product-price">₽ 3500</div>
+            <button class="add-to-cart-button" data-name="Тостер Tefal" data-price="3500">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="тостер10.jpg" alt="Тостер Smeg">
+            <div class="product-name">Тостер Smeg</div>
+            <div class="product-price">₽ 9000</div>
+            <button class="add-to-cart-button" data-name="Тостер Smeg" data-price="9000">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="тостер8.jpg" alt="Тостер Gorenje">
+            <div class="product-name">Тостер Gorenje</div>
+            <div class="product-price">₽ 4000</div>
+            <button class="add-to-cart-button" data-name="Тостер Gorenje" data-price="4000">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="микроволновка.jpg" alt="Микроволновая печь LG">
+            <div class="product-name">Микроволновая печь LG</div>
+            <div class="product-price">₽ 10990</div>
+            <button class="add-to-cart-button" data-name="Микроволновая печь LG" data-price="10990">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="встраиваемая.jpg" alt="Встраиваемая микроволновая печь Bosch">
+            <div class="product-name">Встраиваемая микроволновая печь Bosch</div>
+            <div class="product-price">₽ 49900</div>
+            <button class="add-to-cart-button" data-name="Встраиваемая микроволновая печь Bosch" data-price="49900">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="загруженное.avif" alt="Микроволновая печь Haier">
+            <div class="product-name">Микроволновая печь Haier</div>
+            <div class="product-price">₽ 17000</div>
+            <button class="add-to-cart-button" data-name="Микроволновая печь Haier" data-price="17000">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="печь.jpg" alt="Микроволновая печь Samsung">
+            <div class="product-name">Микроволновая печь Samsung</div>
+            <div class="product-price">₽ 16000</div>
+            <button class="add-to-cart-button" data-name="Микроволновая печь Samsung" data-price="16000">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="блендер.jpg" alt="Погружной блендер Bosch">
+            <div class="product-name">Погружной блендер Bosch</div>
+            <div class="product-price">₽ 9590</div>
+            <button class="add-to-cart-button" data-name="Погружной блендер Bosch" data-price="9590">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="блендер2.jpg" alt="Стационарный блендер Bosch">
+            <div class="product-name">Стационарный блендер Bosch</div>
+            <div class="product-price">₽ 12500</div>
+            <button class="add-to-cart-button" data-name="Стационарный блендер Bosch" data-price="12500">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="блендер3.jpg" alt="Стационарный блендер Philips">
+            <div class="product-name">Стационарный блендер Philips</div>
+            <div class="product-price">₽ 10990</div>
+            <button class="add-to-cart-button" data-name="Стационарный блендер Philips" data-price="10990">Добавить в корзину</button>
+        </div>
+        <div class="product">
+            <img src="блендер4.jpg" alt="Погружной блендер Polaris">
+            <div class="product-name">Погружной блендер Polaris</div>
+            <div class="product-price">₽ 3500</div>
+            <button class="add-to-cart-button" data-name="Погружной блендер Polaris" data-price="3500">Добавить в корзину</button>
+        </div>
+        <!-- Add more products if necessary -->
+    </div>
+</section>
+<button id="scroll-to-top" class="scroll-to-top" onclick="scrollToTop()">↑ Наверх</button>
+<footer>
+    <div class="footer-links">
+        <a href="главная.html">Главная</a>
+    </div>
+    <div class="footer-content">
+        <p>© 2025 Home Shop. Все права защищены.</p>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
